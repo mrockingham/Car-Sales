@@ -4,6 +4,17 @@ import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+import {createStore} from 'redux'
+
+import reducer from './reducer/reducer'
+
+
+
+//step 1 -create a store
+//step 1a provide data to our app from the store
+
+const store = createStore(reducer)
+console.log('what is this',store)
 
 const App = () => {
   const state = {
